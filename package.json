@@ -1,0 +1,16 @@
+{
+  "name": "leadcheck",
+  "version": "0.1.0",
+  "description": "Find the ways a lead form fails silently — pre-hydration submit loss, anti-bot widgets that never render, endpoints that do not enforce.",
+  "type": "module",
+  "bin": { "leadcheck": "src/cli.js" },
+  "exports": { ".": "./src/checks.js", "./probe": "./src/probe.js" },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["forms", "lead-capture", "turnstile", "recaptcha", "hydration", "audit", "cloudflare"],
+  "license": "MIT",
+  "homepage": "https://github.com/EBM-corp/leadcheck",
+  "repository": { "type": "git", "url": "git+https://github.com/EBM-corp/leadcheck.git" },
+  "author": "EBM Corporation (https://ebmcorporation.com)",
+  "engines": { "node": ">=18" }
+}
